@@ -42,18 +42,25 @@ set visualbell "flash screen on error
 set foldmethod=indent "fold based on indentation
 set foldnestmax=3 "max 3 nested folds
 set history=1000 "increase undo limit
-
+set textwidth=80
+set colorcolumn=80
 
 
 " Solarized 
 " ================
-" Ubuntubash onder windows: terminalkleuren aanpassen volgens de site, terminal emulator zsh icm powerline. Instellingen werken. 
+" Ubuntubash onder windows: terminalkleuren aanpassen volgens de site, terminal 
+" emulator zsh icm powerline. Instellingen werken. 
 
 let g:solarized_termcolors=256
 " set t_Co=16
 set background=dark
 let g:solarized_termtrans=1
 colorscheme solarized
+" This below highlights the background in a subtle red for text that goes over 
+" the 80 column limit. 
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
 
 " Airline setting
 " ===============
@@ -89,7 +96,8 @@ let g:ctrlp_cmd = 'CtrlP'
 
 autocmd vimenter * NERDTree " nerdtree automatisch openen
 
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " Nerdtree sluiten als het het enige scherm is dat nog open is. 
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif 
+" Nerdtree sluiten als het het enige scherm is dat nog open is. 
 
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾' " wijzig collapse en expand pijltjes
