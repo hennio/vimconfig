@@ -12,7 +12,6 @@
 " - ctrlp 
 " - vim-fugitive 
 " - vim-easymotion
-" - vim-wikiwq
 " - vim-colors-solorized
 
 
@@ -122,8 +121,3 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 " Move to word
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
-
-
-" VIM-wiki settings
-" =================
-let g:vimwiki_list = [{ 'path': '~/vimwiki', 'path_html': '~/vimwiki/html'}]
