@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 " gebruik in windows (wls ubuntu) de nerdfonts!
 "
 "
@@ -18,7 +20,6 @@
 " Generic settings
 " ================
 
-execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set number
