@@ -15,7 +15,7 @@ execute pathogen#infect()
 " - vim-fugitive 
 " - vim-easymotion
 " - vim-colors-solorized
-
+" - vim-snippets
 
 " Generic settings
 " ================
@@ -41,6 +41,7 @@ set noerrorbells "disable beeps on errors
 set visualbell "flash screen on error
 set foldmethod=indent "fold based on indentation
 set foldnestmax=3 "max 3 nested folds
+set nofoldenable "no fold by default
 set history=1000 "increase undo limit
 set textwidth=80
 set colorcolumn=80
@@ -122,3 +123,14 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 " Move to word
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+
+" ===================
+" 
+
+" Ultisnips
+" =========
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
