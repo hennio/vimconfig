@@ -95,7 +95,7 @@ let g:ctrlp_cmd = 'CtrlP'
 " Nerdtree settings
 " =================
 
-autocmd vimenter * NERDTree " nerdtree automatisch openen
+" autocmd vimenter * NERDTree " nerdtree automatisch openen
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif 
 " Nerdtree sluiten als het het enige scherm is dat nog open is. 
