@@ -16,6 +16,7 @@ execute pathogen#infect()
 " - vim-easymotion
 " - vim-colors-solorized
 " - vim-snippets
+" - vim-surround
 
 " Generic settings
 " ================
