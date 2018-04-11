@@ -27,13 +27,13 @@ set mouse=a
 set clipboard+=unnamed
 set paste
 set go+=a
-set nocompatible
+"set nocompatible
 set wrap " wordwrap opties
 set linebreak
 set list "show linebreaks etc
 set listchars=tab:▸\ ,eol:¬
 set autoindent "new lines inherrit the indentation of previous lines
-set tabstop=4 "bij tab 4 spaties
+"set tabstop=4 "bij tab 4 spaties
 set ruler "show cursor position
 set scrolloff=1 "the number of screen lines to keep above and below the cursor
 set sidescrolloff=5 "number of screen columns left and right of cursor
@@ -84,7 +84,7 @@ endif
 " Ctrlp settings
 " ===============
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+"set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
@@ -116,7 +116,11 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 " Ultisnips
 " =========
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"let g:UltiSnipsSnippetsDir        = $HOME.'/.vim/snippets/'
+"let g:UltiSnipsSnippetDirectories=["snippets"]
+"let g:UltiSnipsExpandTrigger="<c-j>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"let g:UltiSnipsListSnippets="<c-h>"
+
 
