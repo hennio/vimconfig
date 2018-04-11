@@ -8,7 +8,6 @@ execute pathogen#infect()
 "
 " - pathogen
 " - vim-sensible
-" - nerdtree
 " - goyo
 " - airline (niet powerline)
 " - ctrlp 
@@ -89,23 +88,9 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-"
 " ===============
 
 
-" Nerdtree settings
-" =================
-
-" autocmd vimenter * NERDTree " nerdtree automatisch openen
-
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif 
-" Nerdtree sluiten als het het enige scherm is dat nog open is. 
-
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾' " wijzig collapse en expand pijltjes
-
-"
-" =================
 
 " Easymotion settings
 " ===================
