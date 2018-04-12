@@ -21,11 +21,11 @@ execute pathogen#infect()
 " ================
 
 syntax on
-"filetype plugin indent on
+filetype plugin indent on
 set number
 set mouse=a
 set clipboard+=unnamed
-"set paste
+"set paste " Deze niet aanzetten want dan werk vim-snippets niet meer.
 set go+=a
 "set nocompatible
 set wrap " wordwrap opties
