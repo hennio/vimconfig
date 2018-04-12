@@ -25,7 +25,7 @@ filetype plugin indent on
 set number
 set mouse=a
 set clipboard+=unnamed
-set paste
+"set paste " Deze niet aanzetten want dan werk vim-snippets niet meer.
 set go+=a
 "set nocompatible
 set wrap " wordwrap opties
@@ -84,7 +84,7 @@ endif
 " Ctrlp settings
 " ===============
 
-"set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
