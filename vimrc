@@ -21,11 +21,11 @@ execute pathogen#infect()
 " ================
 
 syntax on
-filetype plugin indent on
+"filetype plugin indent on
 set number
 set mouse=a
 set clipboard+=unnamed
-set paste
+"set paste
 set go+=a
 "set nocompatible
 set wrap " wordwrap opties
@@ -84,7 +84,7 @@ endif
 " Ctrlp settings
 " ===============
 
-"set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
