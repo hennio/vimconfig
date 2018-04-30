@@ -33,7 +33,7 @@ set linebreak
 set list "show linebreaks etc
 set listchars=tab:▸\ ,eol:¬
 set autoindent "new lines inherrit the indentation of previous lines
-"set tabstop=4 "bij tab 4 spaties
+set tabstop=4 "bij tab 4 spaties
 set ruler "show cursor position
 set scrolloff=1 "the number of screen lines to keep above and below the cursor
 set sidescrolloff=5 "number of screen columns left and right of cursor
