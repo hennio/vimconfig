@@ -21,7 +21,7 @@ execute pathogen#infect()
 " ================
 
 syntax on
-filetype plugin indent on
+filetype plugin on
 set number
 set mouse=a
 set clipboard+=unnamed
@@ -45,7 +45,7 @@ set nofoldenable "no fold by default
 set history=1000 "increase undo limit
 set textwidth=80
 set colorcolumn=80
-
+let mapleader='\'
 
 " Solarized 
 " ================
@@ -109,6 +109,13 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 " Move to word
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+
+
+" Vimwiki
+
+let g:vimwiki_list = [{'path':'~/notehub/vimwiki', 
+						\'path_html':'~/notehub/vimwiki/html/'}]
 
 
 " ===================
