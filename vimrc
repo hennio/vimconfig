@@ -27,7 +27,7 @@ set mouse=a
 set clipboard+=unnamed
 "set paste " Deze niet aanzetten want dan werk vim-snippets niet meer.
 set go+=a
-"set nocompatible
+set nocompatible
 set wrap " wordwrap opties
 set linebreak
 set list "show linebreaks etc
