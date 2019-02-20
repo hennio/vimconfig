@@ -115,11 +115,13 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 " Vimwiki
 
 let g:vimwiki_list = [{'path':'~/notehub/vimwiki', 
-						\'path_html':'~/notehub/vimwiki/html/'}]
+						\'path_html':'~/notehub/vimwiki/html/',
+						\'syntax':'markdown', 'ext':'.md'}]
 let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown' : 'markdown'}
 
 " ===================
 " 
+
 
 " Ultisnips
 " =========
