@@ -116,7 +116,7 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 let g:vimwiki_list = [{'path':'~/notehub/vimwiki', 
 						\'path_html':'~/notehub/vimwiki/html/'}]
-
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown' : 'markdown'}
 
 " ===================
 " 
