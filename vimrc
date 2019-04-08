@@ -1,4 +1,6 @@
 execute pathogen#infect()
+autocmd Vimleave *.md :!notehub2html
+
 
 " gebruik in windows (wls ubuntu) de nerdfonts!
 "
