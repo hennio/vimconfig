@@ -1,5 +1,5 @@
 execute pathogen#infect()
-autocmd Vimleave *.md :!notehub2html
+"autocmd Vimleave *.md :!notehub2html
 
 
 " gebruik in windows (wls ubuntu) de nerdfonts!
@@ -116,15 +116,13 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 " Vimwiki
 
-let g:vimwiki_list = [{'path':'~/notehub/vimwiki', 
-						\'path_html':'~/notehub/vimwiki/html/',
-						\'syntax':'markdown', 'ext':'.md'}]
-let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown' : 'markdown'}
+"let g:vimwiki_list = [{'path':'~/notehub/vimwiki', 
+"						\'path_html':'~/notehub/vimwiki/html/',
+"						\'syntax':'markdown', 'ext':'.md'}]
+"let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown' : 'markdown'}
 
 " ===================
 " 
-
-
 " Ultisnips
 " =========
 "let g:UltiSnipsSnippetsDir        = $HOME.'/.vim/snippets/'
@@ -134,4 +132,6 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown'
 "let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 "let g:UltiSnipsListSnippets="<c-h>"
 
-
+command! -nargs=1 Nhsearch vimgrep "\c<args>" $HOME/notehub/**/*.md
+nnoremap <leader>[ :Nhsearch]
+inoremap qq <Esc>
