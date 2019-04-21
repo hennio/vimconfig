@@ -132,5 +132,7 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 "let g:UltiSnipsListSnippets="<c-h>"
 
 command! -nargs=1 Nhsearch vimgrep "\c<args>" $HOME/notehub/**/*.md
-nnoremap <leader>[ :Nhsearch]
+nnoremap <leader>[ :Nhsearch 
 inoremap qq <Esc>
+nnoremap <silent> ] :cnext<CR>	
+nnoremap <silent> [ :cprevious<CR>
